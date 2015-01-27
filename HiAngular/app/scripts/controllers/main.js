@@ -9,9 +9,14 @@
  */
 angular.module('hiAngularApp')
   .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
+    $scope.name = 'world';
+    $scope.cars = [
+        {make: 'Skoda', model: 'Fabia'},
+        {make: 'bmw', model: '320d'},
+        {make: 'Ford', model: 'T'}
     ];
+    $scope.doBoo = function() {
+      console.log("Boo!");
+      alert("Boo!");
+    };
   });
